@@ -7,6 +7,35 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const projects = [
+
+  {
+    image: "./assets/projects/portfolio pic.png",
+    name: "Personal Portfolio Website",
+    description: "A responsive portfolio website showcasing myself.",
+    features: [
+      "Implemented smooth navigation and project carousels using Framer Motion and Swiper.",
+      "Deployed via Vercel with CI/CD integration for fast, reliable hosting.",
+    ],
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
+    liveLink: "https://<your-portfolio-website-link>.vercel.app/", // 🔗 Add your live portfolio link here
+    repoLink: "https://github.com/mahalaxmi-k/<your-portfolio-repo>", // 🔗 Add GitHub repo link here
+    owner: "Mahalaxmi",
+  },
+
+  {
+    image: "./assets/projects/face_detection.jpg",
+    name: "Face Detection & Segregation (Supervised Learning)",
+    description: "Classification and organization system using labeled reference images.",
+    features: [
+      "Trained a neural network with MTCNN and FaceNet embeddings for accurate face recognition.",
+      "Automatically sorted new images into organized folders by person and group type.",
+      "Visualized results with bar charts summarizing solo, group, and blurry image counts."
+    ],
+    techStack: ["Python", "PyTorch", "facenet-pytorch", "scikit-learn", "OpenCV", "Pandas", "NumPy"],
+    repoLink: "https://github.com/mahalaxmi-k/face-segregation-supervised-learning", // 🔗 Replace with your actual repo link
+    owner: "Mahalaxmi",
+  },
+
   {
     image: "./assets/projects/movierecommendation.png",
     name: "Movie Recommendation Web Application",
@@ -43,6 +72,22 @@ const projects = [
     ],
     techStack: ["Python", "Librosa", "Scikit-learn", "Matplotlib"],
   },
+
+  {
+    image: "./assets/projects/face_detection.jpg",
+    name: "Face Detection & Segregation (Unsupervised Learning)",
+    description: "An unsupervised AI system that automatically groups faces based on similarity without labeled data.",
+    features: [
+      "Used MTCNN and FaceNet embeddings to extract 512-D facial features from images.",
+      "Applied clustering algorithms (K-Means, DBSCAN) to group similar faces automatically.",
+      "Organized faces into cluster-based folders and generated visual summaries.",
+      "Processed large photo collections efficiently using GPU runtime in Google Colab."
+    ],
+    techStack: ["Python", "PyTorch", "facenet-pytorch", "scikit-learn", "OpenCV", "Pandas", "NumPy", "Matplotlib"],
+    repoLink: "https://github.com/mahalaxmi-k/face-segregation-unsupervised-learning", // 🔗 Replace with your actual repo link
+    owner: "Mahalaxmi",
+  },
+
 ];
 
 const Projects = () => {

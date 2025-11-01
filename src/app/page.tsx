@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import Gaurav from '../components/Maha'
+import Maha from '../components/Maha'
 import About from '../components/About'
 import Skill from '../components/Skill'
 import Qualification from '../components/Qualification'
@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <section id="home"><Gaurav /></section>
+      <section id="home"><Maha /></section>
       <section id="about"><About /></section>
       <section id="skills"><Skill /></section>
       <section id="qualification"><Qualification /></section>
