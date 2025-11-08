@@ -6,7 +6,9 @@ import About from '../components/About'
 import Skill from '../components/Skill'
 import Qualification from '../components/Qualification'
 import Contact from '../components/Contact'
-import Projects from '@/components/Projects';
+import Projects from '@/components/Projects'
+import Certifications from '../components/certifications';
+
 
 export default function Home() {
 
@@ -17,7 +19,9 @@ export default function Home() {
       <section id="skills"><Skill /></section>
       <section id="qualification"><Qualification /></section>
       <section id="projects"><Projects /></section>
+      <section id="certifications"><Certifications /></section>
       <section id="contact"><Contact /></section>
+
 
     </>
   );
