@@ -8,6 +8,21 @@ import "swiper/css/pagination";
 
 const projects = [
 
+
+  {
+    image: "./assets/projects/experiment_Planner.png",
+    name: "AI Experiment Planner",
+    description: "AI agent that fetches research papers, detects literature gaps, and generates experiment plans automatically.",
+    features: [
+      "Built a multi-agent pipeline: literature fetch → semantic search → gap detection → experiment planning",
+      "Deployed two variants: online (Groq API + Streamlit Cloud) and offline (Ollama + local LLaMA)",
+    ],
+    techStack: ["Python", "Streamlit", "Groq API", "Ollama", "arXiv API"],
+    liveLink: "https://experiment-planner-uckapp6qhzpepkltmjefkuh.streamlit.app",
+    repoLink: "https://github.com/mahalaxmi-k/experiment-planner",
+    owner: "Mahalaxmi",
+  },
+
   {
     image: "./assets/projects/portfolio pic.png",
     name: "Personal Portfolio Website",
@@ -17,8 +32,8 @@ const projects = [
       "Deployed via Vercel with CI/CD integration for fast, reliable hosting.",
     ],
     techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
-    liveLink: "https://<your-portfolio-website-link>.vercel.app/", // 🔗 Add your live portfolio link here
-    repoLink: "https://github.com/mahalaxmi-k/<your-portfolio-repo>", // 🔗 Add GitHub repo link here
+    liveLink: "https://mahalaxmi-portfolio.vercel.app/",
+    repoLink: "https://github.com/mahalaxmi-k/Maha_Portfolio",
     owner: "Mahalaxmi",
   },
 
@@ -33,6 +48,21 @@ const projects = [
     ],
     techStack: ["Python", "PyTorch", "facenet-pytorch", "scikit-learn", "OpenCV", "Pandas", "NumPy"],
     repoLink: "https://github.com/mahalaxmi-k/face-segregation-supervised-learning", // 🔗 Replace with your actual repo link
+    owner: "Mahalaxmi",
+  },
+
+  {
+    image: "./assets/projects/face_detection.jpg",
+    name: "Face Detection & Segregation (Unsupervised Learning)",
+    description: "An unsupervised AI system that automatically groups faces based on similarity without labeled data.",
+    features: [
+      "Used MTCNN and FaceNet embeddings to extract 512-D facial features from images.",
+      "Applied clustering algorithms (K-Means, DBSCAN) to group similar faces automatically.",
+      "Organized faces into cluster-based folders and generated visual summaries.",
+      "Processed large photo collections efficiently using GPU runtime in Google Colab."
+    ],
+    techStack: ["Python", "PyTorch", "facenet-pytorch", "scikit-learn", "OpenCV", "Pandas", "NumPy", "Matplotlib"],
+    repoLink: "https://github.com/mahalaxmi-k/face-segregation-unsupervised-learning", // 🔗 Replace with your actual repo link
     owner: "Mahalaxmi",
   },
 
@@ -73,20 +103,7 @@ const projects = [
     techStack: ["Python", "Librosa", "Scikit-learn", "Matplotlib"],
   },
 
-  {
-    image: "./assets/projects/face_detection.jpg",
-    name: "Face Detection & Segregation (Unsupervised Learning)",
-    description: "An unsupervised AI system that automatically groups faces based on similarity without labeled data.",
-    features: [
-      "Used MTCNN and FaceNet embeddings to extract 512-D facial features from images.",
-      "Applied clustering algorithms (K-Means, DBSCAN) to group similar faces automatically.",
-      "Organized faces into cluster-based folders and generated visual summaries.",
-      "Processed large photo collections efficiently using GPU runtime in Google Colab."
-    ],
-    techStack: ["Python", "PyTorch", "facenet-pytorch", "scikit-learn", "OpenCV", "Pandas", "NumPy", "Matplotlib"],
-    repoLink: "https://github.com/mahalaxmi-k/face-segregation-unsupervised-learning", // 🔗 Replace with your actual repo link
-    owner: "Mahalaxmi",
-  },
+
 
 ];
 
@@ -123,7 +140,7 @@ const Projects = () => {
               initial={{ opacity: 0, y: 200 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-              className="border-2 border-black rounded-xl flex flex-col items-center text-center shadow-lg w-full h-[500px] bg-white"
+              className="border-2 border-black rounded-xl flex flex-col items-center text-center shadow-lg w-full h-[500px] bg-white overflow-y-auto p-4"
             >
               {/* Show image only if it exists */}
               {project.image && (

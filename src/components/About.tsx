@@ -49,7 +49,7 @@ const About = () => {
           {[
             {
               icon: "🚀",
-              value: "2+",
+              value: "4+",
               label: "Projects",
               color: "bg-yellow-500 text-yellow-600",
             },
@@ -113,9 +113,8 @@ const About = () => {
           className="text-lg md:text-xl text-gray-800 leading-relaxed text-left md:text-left"
         >
           I'm <span className="font-bold">Mahalaxmi</span>, skilled in Python,
-          Java, and ML tools like YOLOv8 and TensorFlow. Currently pursuing my
-          B.Tech in Computer Science & Engineering at
-          <span className="font-semibold"> Woxsen University</span>. I have built
+          Java, and ML tools like YOLOv8 and TensorFlow.
+          I have built
           real-world solutions through projects and hackathons. Eager to innovate
           with emerging tech.
         </motion.p>
@@ -142,7 +141,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
           className="p-6 border-2 border-gray-300 rounded-lg shadow-md bg-gray-50"
->
+        >
           <h3 className="text-xl font-bold text-gray-900 mb-2">🎯 Peer Learning Mentor</h3>
           <p className="text-gray-700 text-lg leading-relaxed">
             • <span className="font-semibold">3rd Year (2nd Sem):</span> Mentored 1st-year peers in{" "}
@@ -157,7 +156,7 @@ const About = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block mt-4 px-4 py-2 border border-black text-black rounded-lg hover:bg-black hover:text-white transition duration-300"
-  >
+          >
             View Certificate
           </a>
         </motion.div>

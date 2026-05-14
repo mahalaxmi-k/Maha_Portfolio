@@ -100,7 +100,7 @@ const Home = () => {
             />
           </motion.div>
 
-        
+
 
           {/* GitHub + Git */}
           <motion.div className="absolute top-20 left-1/2 transform -translate-x-1/2">
@@ -161,7 +161,6 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
             className="text-gray-800 font-semibold text-2xl sm:text-3xl mt-3 text-center"
           >
-            Computer Science & Engineering Student
           </motion.h2>
 
           <motion.p
@@ -170,7 +169,7 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.9, ease: "easeOut" }}
             className="text-gray-800 text-lg sm:text-xl mt-4 text-center"
           >
-            Fourth-year undergraduate engineering student at Woxsen University
+            B.Tech CSE Graduate | Woxsen University
           </motion.p>
         </motion.div>
 
